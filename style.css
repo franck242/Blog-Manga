@@ -1,0 +1,169 @@
+* {
+
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color:#0e0e0e;
+}
+
+body p {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-align: center;
+
+}
+
+body h2 {
+    text-align: center;
+    color: rgb(31, 110, 214);
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+body div {
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+    transition: font-size 0.5s, background-color 0.5s;
+}
+
+nav a {
+    color: rgb(31, 110, 214);
+    text-decoration: none;
+}
+
+header,
+section {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1,
+h2 {
+    padding-top: 50px;
+}
+
+
+
+.logo {
+    width: 150px;
+    height: 50px;
+}
+
+/* section 1 header avec image principale */
+
+#section1 {
+    background-image: url("./img/muguiwaras.webp");
+    background-size: cover;
+}
+
+
+
+
+
+/* section 2 histoire */
+#section2 {
+    margin-top: 20px;
+}
+
+/* #section2 h2 {
+    margin-bottom: 40px;
+} */
+
+#section2 div {
+    margin: 0;
+}
+
+#section2 img {
+    width: 6000px;
+    margin-left: 20px;
+}
+
+
+
+
+
+/* section 3  */
+
+
+/* #section3 h2 {
+    margin-bottom: 40px;
+} */
+
+#section3 div {
+    display: flex;
+    margin: 0;
+}
+
+
+#section3 img {
+    width: 800px;
+    height: 500px;
+    margin-right: 20px;
+
+}
+
+
+
+
+
+/* section 4 popularité */
+
+/* #section4 h2 {
+    margin-bottom: 40px;
+} */
+
+#section4 div {
+    display: flex;
+    margin: 0;
+}
+
+
+#section4 img {
+    width: 900px;
+    height: 500px;
+    margin-left: 20px;
+
+}
+
+/* footer */
+
+
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    color: rgb(31, 110, 214);
+    background: black;
+}
+
+
+/* Sélecteur pour l'élément nav, uniquement lorsque l'élément body possède la classe "scrolled" */
+body.scrolled nav {
+    /* background-color:rgba(0, 34, 255, 0.33); */
+    font-size: 40px;
+}
